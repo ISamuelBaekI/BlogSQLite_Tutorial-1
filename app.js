@@ -56,15 +56,10 @@ app.get("/usuarios", (req, res) => {
   db.all(query, (err, row) => {
     console.log(`GET /usarios ${JSON.stringify(row)}`);
     // res.send("Lista de usuários");
-<<<<<<< HEAD
+
     res.render("pages/usertable");
-=======
-<<<<<<< HEAD
     res.render("partials/usertable");
-=======
     res.render("pages/usertable");
->>>>>>> e55bcaa (novo novo)
->>>>>>> dev
   });
 });
 
@@ -141,9 +136,6 @@ app.post("/login", (req, res) => {
   res.send("Login ainda não implementado.");
 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 // app.get("/foradecasa", (req, res) => {
 //   // Rota raiz do meu servidor, acesse o browser com o endereço http://localhost:8000
 //   // res.send(index);
@@ -156,10 +148,6 @@ app.get("/dashboard", (req, res) => {
   console.log("GET /dashboard");
   res.render("pages/dashboard");
 });
-
-=======
->>>>>>> e55bcaa (novo novo)
->>>>>>> dev
 // app.get("/info", (req, res) => {
 //   res.send(info);
 // });
