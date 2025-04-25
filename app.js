@@ -56,7 +56,11 @@ app.get("/usuarios", (req, res) => {
   db.all(query, (err, row) => {
     console.log(`GET /usarios ${JSON.stringify(row)}`);
     // res.send("Lista de usuários");
+<<<<<<< HEAD
     res.render("partials/usertable");
+=======
+    res.render("pages/usertable");
+>>>>>>> e55bcaa (novo novo)
   });
 });
 
@@ -133,6 +137,7 @@ app.post("/login", (req, res) => {
   res.send("Login ainda não implementado.");
 });
 
+<<<<<<< HEAD
 // app.get("/foradecasa", (req, res) => {
 //   // Rota raiz do meu servidor, acesse o browser com o endereço http://localhost:8000
 //   // res.send(index);
@@ -146,6 +151,8 @@ app.get("/dashboard", (req, res) => {
   res.render("pages/dashboard");
 });
 
+=======
+>>>>>>> e55bcaa (novo novo)
 // app.get("/info", (req, res) => {
 //   res.send(info);
 // });
@@ -158,4 +165,9 @@ app.get("/dashboard", (req, res) => {
 // app.listen() deve ser o último comando da aplicação (app.js)
 app.listen(PORT, () => {
   console.log(`Servidor sendo executado na porta ${PORT}!`);
+});
+
+app.get("/dashboard", (req, res) => {
+  console.log("GET /dashboard");
+  res.render("pages/dashboard");
 });
